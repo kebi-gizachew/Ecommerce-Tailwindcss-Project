@@ -2,9 +2,9 @@ import buyAgain from '/images/icons/buy-again.png'
 import {NavLink} from 'react-router-dom'
 function Addto(props){
     return(
-        <div className="w-[57vw] border-x-[2px] border-[rgba(210,210,210,1)] flex gap-[40px] p-[20px] justify-evenly items-center h-[350px] pl-[0px]">
-            <div className="w-[18%] h-[280px] object-cover rounded-[10px] over-flow-hidden">
-            <img src={props.img} className="w-full h-full p-[20px] mt-[20px] rounded-[10px] hover:scale-[1.1]"/></div>
+        <div className="w-[57vw] border-x-[2px] border-[rgba(210,210,210,1)] flex gap-[40px] p-[20px] h-[350px] pl-[0px]">
+            <div className="w-[18%] h-[280px] rounded-[20px] overflow-hidden pl-[20px] max-[700px]:w-[50%]">
+            <img src={props.img} className="w-full h-full hover:scale-[1.1] object-cover"/></div>
             <div className="flex flex-col justify-start items-center w-[50%] text-left text-3xl mt-[15px]">
                 <h3 className="w-[100%] pt-[20px] font-bold text-[34px] text-left flex justify-start pb-[10px]">{props.desc}</h3>
                 <p className="text-left flex w-full justify-start items-center pb-[10px]">Arriving on: {props.date}</p>
