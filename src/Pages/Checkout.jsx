@@ -29,7 +29,7 @@ function Check(){
                 <div>
             {checking.map((item)=>{
                 return(
-                <Boxing key={item.id} date={item.date} desc={item.desc} currency={item.money} quantity={item.quantity} image={item.image}/>
+                <Boxing key={item.id} date={item.date} desc={item.desc} currency={item.money} quantity={item.quantity} image={item.image} val={item.id}/>
            )})}
            </div>
            <Summary quant="3" items="$42.75" sh="$4.99" tt="$47.74" et="$4.77" ot="$52.51" />

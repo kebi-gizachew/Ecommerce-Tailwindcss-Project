@@ -18,21 +18,21 @@ function Boxing(props){
                 <div className="w-[36%] h-full">
                     <p className="text-4xl font-bold mb-[10px]">Choose a deliery option:</p>
                     <label className="flex w-[300px] h-auto justify-center items-center gap-[15px] text-[32px]">
-                        <input className="w-[30px] h-[30px]" name="one" type="radio"/>
+                        <input className="w-[30px] h-[30px]" name={props.val} type="radio"/>
                         <div className="flex flex-col">
                         <p>Tuesday, June 21</p>
                         <p className="text-[rgb(222,222,222)]">FREE Shipping</p>
                         </div>
                     </label>
                     <label className="flex w-[350px] h-auto justify-center items-center gap-[15px] text-[32px]">
-                        <input className="w-[30px] h-[30px]" name="one" type="radio"/>
+                        <input className="w-[30px] h-[30px]" name={props.val} type="radio"/>
                         <div className="flex flex-col">
                         <p>Wednesday, June 15</p>
                         <p className="text-[rgb(222,222,222)]">$4.99 - Shipping</p>
                         </div>
                     </label>
                     <label className="flex w-[300px] h-auto justify-center items-center gap-[15px] text-[32px]">
-                        <input className="w-[30px] h-[30px]" name="one" type="radio"/>
+                        <input className="w-[30px] h-[30px]" name={props.val} type="radio"/>
                         <div className="flex flex-col">
                         <p>Monday, June 13</p>
                         <p className="text-[rgb(222,222,222)]">$9.99 - Shipping</p>
