@@ -7,10 +7,10 @@ import mobile from '/images/mobile-logo-white.png'
 function Header() {
   return (
     <header className="w-full overflow-x-hidden h-[8vh] bg-[rgb(8,79,45)] text-white flex justify-between items-center max-[700px]:justify-around">
-      <NavLink to="/" className="pointer-cursor"><img src={mobile} className="hidden max-[700px]:flex max-[700px]:h-[40px]"/><img src={logowhite} alt="A white logo" className="ml-[50px] w-[340px] h-[43%] max-[700px]:w-[60%] max-[700px]:hidden"/></NavLink>
+      <NavLink to="/" className="pointer-cursor hover:border-[1px] hover:border-white h-[90%] ml-[10px] flex justify-center items-center"><img src={mobile} className="hidden max-[700px]:flex max-[700px]:h-[40px]"/><img src={logowhite} alt="A white logo" className="ml-[50px] w-[340px] h-[43%] max-[700px]:w-[60%] max-[700px]:hidden"/></NavLink>
       
       <div className="bg-white flex justify-between w-[55%] h-[65%] items-center rounded-[5px] max-[700px]:w-[40%] max-[700px]:ml-[-40px]">
-        <p className="text-[rgba(112,112,112,1)] text-4xl m-[35px] max-[700px]:text-2xl">Search</p>
+         <input className="w-[100%] h-full text-[rgba(112,112,112,1)] text-4xl p-[20px] max-[700px]:text-2xl" placeholder="Search"/>
         <div className="w-[5%] h-full flex justify-center items-center text-[rgb(0, 0, 0)] bg-[rgb(186,255,190)] max-[700px]:w-[10%] rounded-[0_5px_5px_0]">
           <img src={searchicon} alt="Search Icon" className="w-[50%]" />
         </div>
