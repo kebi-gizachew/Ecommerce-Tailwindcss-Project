@@ -51,11 +51,11 @@ function Orders() {
   return (
     <>
       <Header />
-      <p className="text-5xl flex justify-center pt-[60px] font-bold w-[52vw]">
+      <p className="text-5xl flex justify-center pt-[60px] font-bold w-[52vw] max-[700px]:text-[30px]">
         Your Orders
       </p>
 
-      <div className="flex flex-col w-[57vw] m-[40px] mx-auto mt-[40px] pr-[2px]">
+      <div className="flex flex-col w-[57vw] m-[40px] mx-auto mt-[40px] pr-[2px] max-[700px]:w-[90%] max-[700px]:mx-auto">
         {sets.map((item) => (
           <React.Fragment key={item.id} className="border-b-[1px] border-b-[rgb(0,0,0)]">
             <Place
