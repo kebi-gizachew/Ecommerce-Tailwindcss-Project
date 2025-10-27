@@ -2,7 +2,7 @@ function Box(props) {
   return (
     <div className="border-[2px] border-[rgba(239,239,239,1)] bg-white w-[16.5vw] h-[60vh] flex flex-col items-center p-[30px] pt-[60px] max-[700px]:w-[50%] max-[700px]:h-[500px]">
       <div className="object-cover w-[80%] h-[40%] mb-[30px] max-[700px]:w-[100%] max-[700px]:">
-      <img src={props.image} className="w-full h-full mb-[20px] max-[700px]:w-[50%] rounded-[10px]" /></div>
+      <img src={props.image} className="w-full h-full mb-[20px] max-[700px]:w-[50%] rounded-[10px] hover:border-1px hover:scale-[1.1]" /></div>
       <div className="items-start flex flex-col">
       <p className="text-[33px] max-[700px]:text-[20px] text-left w-full mb-[50px] mt-[0px] h-[50px] max-[700px]:mb-[10px]">{props.text}</p>
       
