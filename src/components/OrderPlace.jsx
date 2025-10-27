@@ -1,6 +1,6 @@
 function Place(props){
     return(
-    <div className="w-full flex justify-between items-center border-[rgba(210,210,210,1)] border-[1px] rounded-[5px] h-[13vh] bg-transparent text-black">
+    <div className="w-full flex justify-between items-center border-[rgba(210,210,210,1)] border-[1px] rounded-[10px] h-[13vh] bg-transparent text-black">
         <div className="w-[50%] flex justify-start gap-[100px] h-full p-[30px] items-center">
         <div className="w-[250px] flex flex-col text-left ml-[60px]">
            <h3 className="font-bold text-4xl text-black">Order Placed:</h3>

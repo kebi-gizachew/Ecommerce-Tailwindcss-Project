@@ -1,9 +1,9 @@
 function Box(props) {
   return (
-    <div className="border-[2px] border-[rgba(239,239,239,1)] bg-white w-[16.5vw] h-[60vh] flex flex-col items-center p-[30px] pt-[60px] max-[700px]:w-[50%] max-[700px]:h-[500px]">
-      <div className="object-cover w-[80%] h-[40%] mb-[30px] max-[700px]:w-[100%] max-[700px]:">
-      <img src={props.image} className="w-full h-full mb-[20px] max-[700px]:w-[50%] rounded-[10px] hover:border-1px hover:scale-[1.1]" /></div>
-      <div className="items-start flex flex-col">
+    <div className="border-[2px] border-[rgba(239,239,239,1)] bg-white w-[16.5vw] h-[60vh] flex flex-col items-center p-[30px] pt-[60px] max-[700px]:w-[50%] max-[700px]:h-[500px] max-[700px]:pt-[30px] max-[700px]:pr-[0px]">
+      <div className="object-cover w-[80%] h-[40%] mb-[30px] max-[700px]:w-[100%] max-[700px]:m-auto">
+      <img src={props.image} className="w-full h-full mb-[20px] max-[700px]:w-[50%] rounded-[10px] hover:border-1px hover:scale-[1.1] max-[700px]:m-auto max-[700px]:mb-[30px]" /></div>
+      <div className="items-start flex flex-col max-[700px]:mt-[10px]">
       <p className="text-[33px] max-[700px]:text-[20px] text-left w-full mb-[50px] mt-[0px] h-[50px] max-[700px]:mb-[10px]">{props.text}</p>
       
       <div className="mt-[0px] flex pl-0 gap-[20px] items-center">
@@ -13,7 +13,7 @@ function Box(props) {
       
       <p className="my-[20px] text-[30px] font-bold max-[700px]:text-[18px]">{props.cost}</p>
       
-      <select className="w-[25%] h-[60px] border-[2px] border-black rounded-[5px] text-3xl p-[10px] mb-[50px] max-[700px]:h-[40px] max-[700px]:w-[50px] max-[700px]:text-[15px] max-[700px]:mt-[0px]">
+      <select className="w-[25%] h-[60px] border-[2px] border-black rounded-[5px] text-3xl p-[10px] mb-[50px] max-[700px]:h-[40px] max-[700px]:w-[50px] max-[700px]:text-[15px] max-[700px]:mt-[0px] max-[700px]:mb-[30px]">
         <option value="default">1</option>
         <option>2</option>
         <option>3</option>
