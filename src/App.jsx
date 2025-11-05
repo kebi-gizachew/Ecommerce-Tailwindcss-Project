@@ -12,7 +12,6 @@ function App(){
       <Route path='/checkout' element={<Check/>}/>
       <Route path='/tracking' element={<Tracking/>}/>
     </Routes>
-   
     </BrowserRouter>
   )
 }
