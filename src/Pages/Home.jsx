@@ -1,9 +1,14 @@
 import Header from '../components/Header'
 import Box from '../components/Box'
-import products from '../data/products'
 import {useState} from 'react'
+import PropContext from '../Hooks/PropContext'
+import {useContext,useEffect} from 'react'
 function Home(){
+    const {products}=useContext(PropContext)
     const [outputs,setOutputs]=useState(products)
+    useEffect(()=>{
+        setOutputs(products)
+    },[products])
     const sets=(products!=outputs?outputs:products).map((items)=>({
         id:items.id,
             img:items.image,

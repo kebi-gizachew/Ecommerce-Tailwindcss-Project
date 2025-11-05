@@ -2,9 +2,11 @@ import logowhite from '/images/logo-white.png';
 import buyagain from '/images/icons/buy-again.png';
 import searchicon from '/images/icons/search-icon.png';
 import {NavLink} from 'react-router-dom';
-import products from '../data/products'
 import mobile from '/images/mobile-logo-white.png'
+import {useContext} from 'react'
+import PropContext from '../Hooks/PropContext'
 function Header({setOutputs}) {
+  const {products}=useContext(PropContext)
   const Filtering=(e)=>{
       const value=e.target.value.toLowerCase().trim()
       const filtered=products.filter(product=>{

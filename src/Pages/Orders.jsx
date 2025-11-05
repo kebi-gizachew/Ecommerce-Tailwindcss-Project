@@ -2,8 +2,10 @@ import Header from '../components/Header'
 import Place from '../components/OrderPlace'
 import Addto from '../components/AddTo'
 import React from 'react'
-import products from '../data/products'
+import PropContext from '../Hooks/PropContext'
+import {useContext} from 'react'
 function Orders() {
+  const {products}=useContext(PropContext)
   const sets = [
     {
       id:products[0].id,

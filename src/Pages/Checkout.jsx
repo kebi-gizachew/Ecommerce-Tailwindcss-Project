@@ -1,8 +1,10 @@
 import Boxing from '../components/Boxing'
 import Heading from '../components/Heading' 
 import Summary from '../components/Summary'
-import products from '../data/products'
+import PropContext from '../Hooks/PropContext'
+import {useContext} from 'react'
 function Check(){
+    const {products}=useContext(PropContext)
     const checking=[
         {
             id:products[0].id,

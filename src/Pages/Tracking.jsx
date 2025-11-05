@@ -1,9 +1,11 @@
 import Header from '../components/Header';
 import TrackBox from '../components/TrackBox'
-import products from '../data/products'
+import {useContext} from 'react'
+import PropContext from '../Hooks/PropContext'
 import {NavLink} from 'react-router-dom'
 import Bottom from '../components/TrackingBottom'
 function Tracking(){
+    const {products}=useContext(PropContext)
     return(
         <>
         <Header/>
