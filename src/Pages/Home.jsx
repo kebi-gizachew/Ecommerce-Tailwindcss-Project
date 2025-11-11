@@ -3,6 +3,8 @@ import Box from '../components/Box'
 import {useState} from 'react'
 import PropContext from '../Hooks/PropContext'
 import {useContext,useEffect} from 'react'
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Home(){
     const {products}=useContext(PropContext)
     const [outputs,setOutputs]=useState(products)
@@ -17,11 +19,11 @@ function Home(){
             money:"$"+items.priceCents*0.01,
             aside:items.rating.count
         }
-    ))
-        
+    ))     
     return(
         <div className="font-robot">
     <Header setOutputs={setOutputs}/>
+    <ToastContainer position="top-center" theme="light"/>
     <div className="flex flex-wrap gap-[0px]">
     {sets.map((item)=>{
         return(

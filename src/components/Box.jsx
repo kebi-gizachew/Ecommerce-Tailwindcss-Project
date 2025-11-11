@@ -1,4 +1,11 @@
+import {toast} from 'react-toastify';
 function Box(props) {
+  const notify = () => toast.success("Added to cart!",{autoClose:1500}, { style:{
+    height:'100px',
+    fontSize:'30px',
+    width:'500px',
+    textAlign:"center"
+  }});
   return (
     <div className="border-[2px] border-[rgba(239,239,239,1)] bg-white w-[16.5vw] h-[60vh] flex flex-col items-center p-[30px] pt-[60px] max-[700px]:w-[50%] max-[700px]:h-[500px] max-[700px]:pt-[30px] max-[700px]:pr-[0px]">
       <div className="object-cover w-[80%] h-[40%] mb-[30px] max-[700px]:w-[100%] max-[700px]:m-auto">
@@ -26,7 +33,7 @@ function Box(props) {
         <option>10</option>
       </select>
       </div>
-      <button className="w-[90%] h-[75px] flex justify-center items-center text-white text-3xl rounded-[10px] bg-[rgb(25,135,84)] max-[700px]:text-[20px] hover:bg-[rgba(82,154,82,1)]">
+      <button className="w-[90%] h-[75px] flex justify-center items-center text-white text-3xl rounded-[10px] bg-[rgb(25,135,84)] max-[700px]:text-[20px] hover:bg-[rgba(82,154,82,1)]" onClick={notify}>
         Add to Cart
       </button>
     </div>
